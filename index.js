@@ -15,9 +15,9 @@ console.log('Ai provider: ', AI_PROVIDER);
 
 const ENDPOINT = args.ENDPOINT || process.env.ENDPOINT
 
-const apiKey = args.apiKey || process.env.OPENAI_API_KEY;
+const apiKey = args.apiKey || process.env.OPENAI_API_KEY
 
-const language = args.language || process.env.AI_COMMIT_LANGUAGE || 'english';
+const language = args.language || process.env.AI_COMMIT_LANGUAGE || 'portuguese';
 
 if (AI_PROVIDER === 'openai' && !apiKey) {
   console.error("Please set the OPENAI_API_KEY environment variable.");
